@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
 $host = 'localhost';
-$dbname = 'ideajam';   // your IdeaJam database name
-$username = 'root';    // your MySQL username
-$password = '';        // your MySQL password
+$dbname = 'joins_demo';  // your IdeaJam database name
+$username = 'root';      // your MySQL username
+$password = '';          // your MySQL password
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
@@ -11,4 +11,3 @@ try {
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
-?>
